@@ -1,0 +1,178 @@
+/* TO GET AN IDEA OF THE CSS YOU WILL LIKELY BE USING, SEE THE LISTS BELOW. */
+
+        /* 
+        
+        Spacing 
+
+            - padding (shorthand and/or specific properties like padding-bottom, etc.)
+
+            - margin, (shorthand and/or specific properties like margin-top, etc.)
+
+            - letter-spacing, word-spacing, line-height
+
+            - width, max-width, min-width
+            - height, max-height, min-height
+
+        Typography 
+
+            - font-family, font-size, font-style, font-weight
+
+            - text-decoration, text-align
+
+            - color
+
+            - text-shadow, text-transform
+
+        Box, Layout and Border 
+
+            - border (shorthand and/or specific properties like border-top, border-bottom-radius, border-width, etc.)
+
+            - box-shadow
+
+            - display, float, align-items, align-content
+
+            - grid-template-columns, grid-column-gap
+
+            - transform
+
+        Other
+
+            - :nth()-child (to target specific child elements)
+
+            - :focus, :hover, :active (to target link states)
+
+            - @font-face or @import (to import typefaces)
+
+        */
+
+
+/* ------ START WRITING YOUR CODE BELOW ------ */
+@font-face {
+    font-family:Montserrat;
+    src:url(../fonts/Montserrat-regular.ttf) format('truetype')
+    font-weight:normal;
+    font-style:normal;
+}
+@font-face {
+    font-family:Josefinslab;
+    src:url(../fonts/Josefinslab-regular.ttf) format ('truetype')
+    font-weight:normal;
+    font-style:normal;
+}
+a{
+    text-decoration: none;
+    color: grey;
+}
+
+html{
+    font-size: 1rem;
+    font-family: Montserrat, sans-serif;
+}
+
+nav{
+    padding: 2rem;
+    margin-top: 4rem;
+    word-spacing: 6rem;
+    
+}
+
+nav a {
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    font-size: 1.125rem;
+    margin-bottom: 4rem;
+    color: blue;
+}
+
+nav a:focus,
+nav a:hover{
+    color: #FFF;
+    background-color: #33658A;
+}
+nav a:active{
+    color: #FFF;
+    background: #000;
+}
+.article-image{
+    float: left;
+    
+}
+body{
+    margin: 1.5rem auto;
+    width: 90%;
+    min-width: 56.25rem;
+}
+
+main{
+    overflow: auto;
+    min-width: 45rem;
+    
+}
+
+.main-section{
+    display: flex;
+}
+
+article{
+    width: 70%
+}
+
+aside{
+    width: 30%;    
+}
+
+.highlight{
+    text-transform: uppercase;
+    font-family: "ultraregular",serif;
+    background-color: maroon;
+    padding: 1rem;
+    box-shadow: 0.625rem 0.625rem 0.625rem grey;
+    border-radius: 1.875ren 0.625rem;
+    border-color: black;
+    color: beige;
+    font-weight: bold;
+}
+
+button{
+    background-color: blue;
+    border-color: blue;
+    color: beige;
+    font-family: "ultraregular", serif;
+    font-size: 2rem;
+    border-radius: 1rem;
+    text-align: left;
+    margin: 10%;
+    margin-top: 3rem;
+    box-shadow: 0.625rem 0.625rem 0.625rem grey;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(6,auto);
+    background-color: antiquewhite;
+    clear: both;
+    margin: 0;
+    grid-column-gap: 1rem;
+}
+
+.grid img{
+    width: 100%
+}
+
+.subsection{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 1rem; 
+    } 
+.subsection img{
+    width: 100%;
+    height: 100%;
+}
+#bottom{
+    text-align:
+}
+
+    
+    
+
